@@ -23,7 +23,7 @@
       logo.src = "assets/img/logo/Manajero-logo.png";
     } else {
       header_navbar.classList.remove("sticky");
-      logo.src = "assets/img/logo/Manajero-logo.png";
+      logo.src = "assets/img/logo/Manajero-logo-light.png";
     }
 
     // show or hide the back-top-top button

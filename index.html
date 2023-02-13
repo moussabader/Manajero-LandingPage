@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -9,7 +9,7 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="assets/img/Manajero-logo.png"
+      href="assets/img/favicon.png"
     />
 
     <!-- ======== CSS here ======== -->
@@ -54,8 +54,8 @@
           <div class="row align-items-center">
             <div class="col-lg-12">
               <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="index.html">
-                  <img src="assets/img/logo/Manajero-logo.png" alt="Logo" style="width: 40%"/>
+                <a class="navbar-brand" href="#home">
+                  <img src="assets/img/logo/Manajero-logo-light.png" alt="Logo" style="width: 40%"/>
                 </a>
                 <button
                   class="navbar-toggler"
@@ -75,28 +75,26 @@
                   class="collapse navbar-collapse sub-menu-bar"
                   id="navbarSupportedContent"
                 >
-                  <ul id="nav" class="navbar-nav ms-auto">
+                  <ul id="nav" class="navbar-nav" style="width: 100%;">
                     <li class="nav-item">
-                      <a class="page-scroll active" href="#home">Home</a>
+                      <a class="page-scroll" id="title1" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#about">About Us</a>
+                      <a class="page-scroll" id="title2" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#mission">Mission</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#vision">Vision</a>
+                      <a class="page-scroll" id="title3" href="#sdg">Sustainable Development Goals</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#values">Values</a>
+                      <a class="page-scroll" id="title4" href="#contact">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                      <a class="page-scroll" href="#services">Services and Products</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="page-scroll" href="#contact">Contact Us</a>
+                      <div>
+                        <select id="language-selector" class="form-select" style="border-radius: 20%; margin-top: 20%">
+                          <option value="en">EN</option>
+                          <option value="fr">FR</option>
+                        </select>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -117,21 +115,24 @@
               <h1 class="wow fadeInUp" data-wow-delay=".4s">
                 MANAJERO
               </h1>
-              <h2 class="wow fadeInUp" data-wow-delay=".4s" style="color:#0f5599">
+              <h2 id="description1" class="wow fadeInUp" data-wow-delay=".4s" style="color:#0f5599">
                 Cloud ERP Software for Small and medium businesses
               </h2>
-              <p class="wow fadeInUp" data-wow-delay=".6s">
+              <p id="description2" class="wow fadeInUp" data-wow-delay=".6s">
                 A simple and powerful ERP software for Manufacturing, Distribution and Services.
               </p>
               <a
                 href="javascript:void(0)"
                 class="main-btn border-btn btn-hover wow fadeInUp"
                 data-wow-delay=".6s"
+                id="purchaseBtn"
                 >Purchase Now</a
               >
-              <a href="#about" class="scroll-bottom">
-                <i class="lni lni-arrow-down"></i
-              ></a>
+              <div>
+                <a href="#about" class="scroll-down">
+                  <i class="lni lni-chevron-down-circle"></i>
+                </a>
+              </div>
             </div>
           </div>
           <div class="col-lg-6">
@@ -145,23 +146,25 @@
     <!-- ======== hero-section end ======== -->
 
     <!-- ======== about-section start ======== -->
-    <section id="about" class="feature-extended-section pt-100">
+    <section id="about" class="about-section pt-100">
       <div class="feature-extended-wrapper">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9" style="width: 80%;">
               <div class="section-title text-center mb-60">
-                <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                  Why Choose Manajero
+                <h2  id="aboutTitle" class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                  Why Choose Manajero ?
                 </h2>
-                <p class="wow fadeInUp" data-wow-delay=".4s">
+                <p id="about1" class="wow fadeInUp" data-wow-delay=".4s">
                   Manajero is a cutting-edge ERP software designed to streamline your business operations
                   and boost your productivity. With Manajero, you can manage all your critical business processes
                   in one place, from finance and accounting to inventory, sales, and marketing.
-                  <br>
-                  Our software is easy to use, highly customizable, and scalable, making it suitable for
-                  small and medium businesses, across all industries
                 </p>
+                <p id="about2" class="wow fadeInUp" data-wow-delay=".4s">
+                Our software is easy to use, highly customizable, and scalable, making it suitable for
+                small and medium businesses, across all industries
+                </p>
+
               </div>
             </div>
           </div>
@@ -171,12 +174,12 @@
     <!-- ======== about-section end ======== -->
 
     <!-- ======== mission-section start ======== -->
-    <section id="mission" class="about-section pt-150">
+    <section id="mission" class="about-section pt-50">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-xl-6 col-lg-6">
-            <div class="about-img">
-              <img src="assets/img/mission/mission.png" alt="" class="w-80" style="border-radius: 5%" />
+            <div class="about-img wow fadeInUp">
+              <img src="assets/img/mission/mission.png" alt="" class="w-75" style="border-radius: 40%" />
               <img
                       src="assets/img/mission/about-left-shape.png"
                       alt=""
@@ -187,21 +190,26 @@
           <div class="col-xl-6 col-lg-6">
             <div class="about-content">
               <div class="section-title mb-30">
-                <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                <h3 id="missionTitle" class="mb-25 wow fadeInUp" data-wow-delay=".2s">
                   Our Mission
-                </h2>
-                <p class="wow fadeInUp" data-wow-delay=".4s">
+                </h3>
+                <p id="missionDesc" class="wow fadeInUp" data-wow-delay=".4s">
                   Our mission is to provide a software that is intuitive, full-featured, tightly integrated,
                   effortless to upgrade, that form a complete suite of tools to accompany any business need,
                   all while running smoothly for every business, every user.
-                  <h4 class="mb-10 mt-10 wow fadeInUp" data-wow-delay=".2s">
+                </p>
+                <h4 id="mission1" class="mb-10 mt-10 wow fadeInUp" data-wow-delay=".2s">
                     Business Scope
-                  </h4>
-                    Manajero software covers a wide range of business needs. Making it a great option for virtually any industry.
-                  <h4 class="mb-10 mt-10 wow fadeInUp" data-wow-delay=".2s">
+                </h4>
+                <p id="mission1Desc" class="wow fadeInUp" data-wow-delay=".4s">
+                  Manajero software covers a wide range of business needs. Making it a great option for virtually any industry.
+                </p>
+                <h4 id="mission2" class="mb-10 mt-10 wow fadeInUp" data-wow-delay=".2s">
                     User-Friendliness
-                  </h4>
-                Manajero offers a platform that is intuitive and easy to understand.
+                </h4>
+                <p id="mission2Desc" class="wow fadeInUp" data-wow-delay=".4s">
+                  Manajero offers a platform that is intuitive and easy to understand.
+                </p>
               </div>
             </div>
           </div>
@@ -211,34 +219,37 @@
     <!-- ======== mission-section end ======== -->
 
     <!-- ======== vision-section start ======== -->
-    <section id="vision" class="about-section pt-150">
+    <section id="vision" class="about-section pt-50">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-xl-6 col-lg-6">
             <div class="about-content">
               <div class="section-title mb-30">
-                <h2 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
+                <h3 id="visionTitle" class="mb-25 wow fadeInUp" data-wow-delay=".2s">
                   Our Vision
-                </h2>
-                <p class="wow fadeInUp" data-wow-delay=".4s">
+                </h3>
+                <p id="visionDesc1" class="wow fadeInUp" data-wow-delay=".4s">
                   We think business software should cover complex needs without being complicated.
-                  <br>
+                </p>
+                <p id="visionDesc2"  class="wow fadeInUp" data-wow-delay=".4s">
                   Our vision is to give companies easy access to the software they need to run and
-                  expand their business. <br>
+                  expand their business.
+                </p>
+                <p id="visionDesc3"  class="wow fadeInUp" data-wow-delay=".4s">
                   We help organizations succeed in the future world with a
                   unique approach to software deployment
                 </p>
               </div>
               <ul>
-                <li>Quick Access</li>
-                <li>Easily to Manage</li>
-                <li>Full Featured</li>
+                <li id="vision1">Quick Access</li>
+                <li id="vision2">Easily to Manage</li>
+                <li id="vision3">Full Featured</li>
               </ul>
             </div>
           </div>
           <div class="col-xl-6 col-lg-6 order-first order-lg-last">
-            <div class="about-img-2">
-              <img src="assets/img/vision/dashboard-img.png" alt="" class="w-100" />
+            <div class="about-img-2 wow fadeInUp">
+              <img src="assets/img/vision/dashboard-img.png" alt="" class="w-100" style="border-radius: 15%" />
               <img
                       src="assets/img/vision/about-right-shape.png"
                       alt=""
@@ -252,13 +263,13 @@
     <!-- ======== vision-section end ======== -->
 
     <!-- ======== values-section start ======== -->
-    <section id="values" class="feature-section pt-120">
+    <section id="values" class="feature-section pt-50">
       <div class="container">
-        <h2 class="mb-25 wow fadeInUp text-center" data-wow-delay=".2s">
+        <h3 id="valuesTitle" class="mb-25 wow fadeInUp text-center" data-wow-delay=".2s">
           Our Values
-        </h2>
+        </h3>
         <div class="row justify-content-center">
-          <p class="wow fadeInUp text-center" data-wow-delay=".4s" style="font-size: 22px">
+          <p id="valuesDesc" class="wow fadeInUp text-center" data-wow-delay=".4s" style="font-size: 22px">
             Our mission is accomplished with a strong respect of our values
           </p>
           <div class="col-lg-4 col-md-8 col-sm-10">
@@ -267,8 +278,8 @@
                 <i class="lni lni-customer"></i>
               </div>
               <div class="content">
-                <h3>Customer satisfaction</h3>
-                <p>
+                <h3 id="value1">Customer satisfaction</h3>
+                <p id="value1Desc">
                   We love all our clients and provide a dedicated service for them.
                   We are reactive, honest and definitely solution-oriented.
                 </p>
@@ -281,14 +292,19 @@
                 <i class="lni lni-cloud-check"></i>
               </div>
               <div class="content">
-                <h3>Performance</h3>
-                <p>
+                <h3 id="value2">Performance</h3>
+                <p id="value2Desc">
                   Performance is a core value of our strategy. We measure and encourage personal performance.
                   We also take care of our client performance by providing a high level of added value.
                 </p>
               </div>
             </div>
           </div>
+        </div>
+        <div>
+          <a href="#services" class="scroll-down">
+            <i class="lni lni-chevron-down-circle"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -297,8 +313,8 @@
     <!-- ======== services-section start ======== -->
     <section id="services" class="feature-section pt-120">
       <div class="container">
-        <h2 class="mb-25 wow fadeInUp text-center" data-wow-delay=".2s">
-          Our Services and Products
+        <h2 id="servicesTitle" class="mb-25 wow fadeInUp text-center" data-wow-delay=".2s">
+          Our Services
         </h2>
         <div class="row justify-content-center">
 
@@ -308,8 +324,8 @@
                 <img src="assets/img/services/hr.png" alt="" style="width: 70%"/>
               </div>
               <div class="content">
-                <h3>Human Resource Management</h3>
-                <p>Employees, Departments, Contracts, Recruitment, etc ...</p>
+                <h3 id="service1">Human Resource Management</h3>
+                <p id="service1Desc">Employees, Departments, Contracts, Recruitment, etc ...</p>
               </div>
             </div>
           </div>
@@ -319,8 +335,8 @@
                 <img src="assets/img/services/crm.png" alt="" style="width: 70%"/>
               </div>
               <div class="content">
-                <h3>Customer Relationship Management</h3>
-                <p>
+                <h3 id="service2">Customer Relationship Management</h3>
+                <p id="service2Desc">
                   Prospects, Clients, Contracts, Sales, etc ...
                 </p>
               </div>
@@ -332,8 +348,8 @@
                 <img src="assets/img/services/finances.png" alt="" style="width: 70%"/>
               </div>
               <div class="content">
-                <h3>Financial Management</h3>
-                <p>
+                <h3 id="service3">Financial Management</h3>
+                <p id="service3Desc">
                   Cash Flow, Sales, Budgets, Reconciliation, etc ...
                 </p>
               </div>
@@ -345,8 +361,8 @@
                 <img src="assets/img/services/accounting.png" alt="" style="width: 70%"/>
               </div>
               <div class="content">
-                <h3>Accounting Management</h3>
-                <p>
+                <h3 id="service4">Accounting Management</h3>
+                <p id="service4Desc">
                   Accounts, Auxiliary Logs, Accounting Entries, Invoices, etc ...
                 </p>
               </div>
@@ -358,9 +374,9 @@
                 <img src="assets/img/services/stock.png" alt="" style="width: 70%"/>
               </div>
               <div class="content">
-                <h3>Product and Stock Management</h3>
-                <p>
-                  Suppliers, Procurment Process, Warehouse, Inventories, etc ...
+                <h3 id="service5">Product and Stock Management</h3>
+                <p id="service5Desc">
+                  Suppliers, Procurement Process, Warehouse, Inventories, etc ...
                 </p>
               </div>
             </div>
@@ -371,8 +387,8 @@
                 <img src="assets/img/services/marketing.png" alt="" style="width: 70%"/>
               </div>
               <div class="content">
-                <h3>Communication and Marketing Management</h3>
-                <p>
+                <h3 id="service6">Communication and Marketing Management</h3>
+                <p id="service6Desc">
                   Partners, Marketing, Events, Communication, etc ...
                 </p>
               </div>
@@ -384,43 +400,142 @@
                 <img src="assets/img/services/litiges.png" alt="" style="width: 70%"/>
               </div>
               <div class="content">
-                <h3>Recovery & Litigation Management</h3>
-                <p>
+                <h3 id="service7">Recovery and Litigation Management</h3>
+                <p id="service7Desc">
                   Laws, Disputes, Lawyers, etc ...
                 </p>
               </div>
             </div>
           </div>
         </div>
+        <div>
+          <a href="#sdg" class="scroll-down">
+            <i class="lni lni-chevron-down-circle"></i>
+          </a>
+        </div>
       </div>
     </section>
     <!-- ======== services-section end ======== -->
 
+    <!-- ======== SDG-section start ======== -->
+    <section id="sdg" class="feature-section pt-120">
+      <div class="container">
+        <h2 id="sdgTitle" class="mb-25 wow fadeInUp text-center" data-wow-delay=".2s">
+          Our Sustainable Development Goals
+        </h2>
+        <div class="row justify-content-center">
+
+          <div class="col-lg-5 col-md-8 col-sm-10">
+            <div class="single-feature wow fadeInUp">
+              <div>
+                <img src="assets/img/sdg/sdg8.png" alt="" style="width: 50%"/>
+              </div>
+              <div class="content ">
+                <h4 id="sdg1">Decent Work And Economic Growth</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-8 col-sm-10">
+            <div class="single-feature wow fadeInUp">
+              <div>
+                <img src="assets/img/sdg/sdg9.png" alt="" style="width: 50%"/>
+              </div>
+              <div class="content">
+                <h4 id="sdg2">Industry, Innovation And Infrastructure</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-8 col-sm-10">
+            <div class="single-feature wow fadeInUp">
+              <div>
+                <img src="assets/img/sdg/sdg12.png" alt="" style="width: 50%;"/>
+              </div>
+              <div class="content">
+                <h4 id="sdg3">Responsible Consumption And Production</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-8 col-sm-10">
+            <div class="single-feature wow fadeInUp">
+              <div>
+                <img src="assets/img/sdg/sdg17.png" alt="" style="width: 50%"/>
+              </div>
+              <div class="content">
+                <h4 id="sdg4">Partnerships For The Goals</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="#contact" class="scroll-down">
+            <i class="lni lni-chevron-down-circle"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ======== SDG-section end ======== -->
+
     <!-- ======== contact-section start ======== -->
     <section id="contact" class="subscribe-section pt-120">
       <div class="container">
-        <h2 class="mb-25 wow fadeInUp text-center" data-wow-delay=".2s">Contact Us</h2>
-        <div class="subscribe-wrapper img-bg">
+        <h2 id="contactTitle" class="mb-25 wow fadeInUp text-center" data-wow-delay=".2s">Contact Us</h2>
+        <div class="subscribe-wrapper img-bg wow fadeInUp">
           <div class="row align-items-center">
-            <form action="#" class="subscribe-form">
+            <form action="#" class="subscribe-form wow fadeInUp">
+              <div class="contact-wrapper">
+                <input
+                        type="text"
+                        name="subs-fname"
+                        id="subs-fname"
+                        placeholder="First Name"
+                />
+                <input
+                        type="text"
+                        name="subs-lname"
+                        id="subs-lname"
+                        placeholder="Last Name"
+                />
+              </div>
               <input
                       type="text"
-                      name="subs-name"
-                      id="subs-name"
-                      placeholder="Your Name"
+                      name="subs-company"
+                      id="subs-company"
+                      placeholder="Company Name"
               />
+              <div class="contact-wrapper">
+                <input
+                        type="text"
+                        name="subs-website"
+                        id="subs-website"
+                        placeholder="Website"
+                />
+                <input
+                        type="text"
+                        name="subs-phone"
+                        id="subs-phone"
+                        placeholder="Phone Number"
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                />
+              </div>
               <input
                       type="email"
                       name="subs-email"
                       id="subs-email"
-                      placeholder="Your Email"
+                      placeholder="Email"
+              />
+
+              <input
+                      type="text"
+                      name="subs-subject"
+                      id="subs-subject"
+                      placeholder="Message Subject"
               />
               <textarea
                       name="subs-message"
                       id="subs-message"
-                      placeholder="Your Message"
+                      placeholder="Message"
               ></textarea>
-              <button type="submit" class="main-btn btn-hover">
+              <button type="submit" class="main-btn btn-hover" id="btnSubmit">
                 Submit
               </button>
             </form>
@@ -439,31 +554,34 @@
               <div class="footer-widget">
                 <div class="logo mb-30">
                   <a href="index.html">
-                    <img src="assets/img/logo/Manajero-logo.png" alt="" style="width: 40%"/>
+                    <img src="assets/img/logo/Manajero-logo-light.png" alt="" style="width: 40%"/>
                   </a>
                 </div>
                 <p class="desc mb-30 text-white">
-                  &copy; 2023 Manajero, IPACT Consult. <br>
+                  &copy; 2023 Manajero, IPACT Consult.
+                </p>
+                <p id="rights" class="desc mb-30 text-white">
                   All rights reserved
+                </p>
                 </p>
                 <ul class="socials">
                   <li>
-                    <a href="javascript:void(0)">
+                    <a href="https://www.facebook.com/IPACTConsultinc" target="_blank">
                       <i class="lni lni-facebook-filled"></i>
                     </a>
                   </li>
                   <li>
                     <a href="javascript:void(0)">
-                      <i class="lni lni-twitter-filled"></i>
+                      <i class="lni lni-youtube"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">
-                      <i class="lni lni-instagram-filled"></i>
+                    <a href="https://www.ipactconsult.com" target="_blank">
+                      <i class="lni lni-website" style="font-size: 28px"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">
+                    <a href="https://www.linkedin.com/company/ipact-consult-inc/" target="_blank">
                       <i class="lni lni-linkedin-original"></i>
                     </a>
                   </li>
@@ -473,13 +591,13 @@
 
             <div class="col-xl-3 col-lg-3 col-md-6">
               <div class="footer-widget">
-                <h3>Help?</h3>
+                <h3 id="help">Help?</h3>
                 <ul class="links">
                   <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Privacy policy</a></li>
-                  <li><a href="#">Terms & conditions</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Support</a></li>
+                  <li><a href="#" id="link1">Privacy policy</a></li>
+                  <li><a href="#" id="link2">Terms & conditions</a></li>
+                  <li><a href="#" id="link3">Pricing</a></li>
+                  <li><a href="#" id="link4">Support</a></li>
                 </ul>
               </div>
             </div>
@@ -506,6 +624,7 @@
     </a>
 
     <!-- ======== JS here ======== -->
+    <script src="assets/js/lang.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
